@@ -8,16 +8,16 @@ body {
 }
 .container {
 	width: $container;
-	@include margin-reset;
 }
 
 nav {
 	width: $container;
-	@include clearfix;
+	text-align: left;
+	
 
-	svg {
-	width: 14%;
-	height: 14%;
+	ul {
+		@include clearfix;
+		padding: 0;
 	}
 
 	li {
