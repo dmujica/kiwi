@@ -1,2 +1,54 @@
 @import "_normalize.scss";
-@import "_grid.scss";
+@import "_variable.scss";
+
+body {
+	background: url(../img/bg.jpg);
+	width: 90%;
+	@include margin-reset;
+}
+.container {
+	width: $container;
+	@include margin-reset;
+}
+
+nav {
+	width: $container;
+	@include clearfix;
+
+	svg {
+	width: 14%;
+	height: 14%;
+	}
+
+	li {
+		float: left;
+		list-style: none;
+	}
+}
+
+article {
+	width: $container;
+	@include clearfix;
+		section {
+		width: $section;
+		float: left;
+
+			img {
+				width: $container - 20%;
+			}
+		}
+
+		blockquote {
+			width: $container - 4%;
+		}
+
+}
+
+footer {
+	width: $container;
+
+	p {
+		width: $footer;
+		float: left;
+	}
+}

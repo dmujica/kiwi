@@ -1,0 +1,29 @@
+/*variables*/
+$section: 25%;
+$footer: 50%;
+$container: 100%;
+$orange: #e44d26;
+$white: #fff;
+
+
+
+
+
+
+/*mixins*/
+@mixin margin-reset {
+	margin: 0 auto;
+	text-align: center;
+}
+
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}
