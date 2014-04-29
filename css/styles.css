@@ -318,9 +318,7 @@ body {
   background: url(../img/bg.jpg);
   width: 90%;
   margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; }
+  text-align: center; }
 
 .container {
   width: 100%; }
@@ -329,7 +327,8 @@ nav {
   width: 100%;
   text-align: left; }
   nav ul {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0; }
     nav ul:after {
       content: ".";
       display: block;
@@ -340,23 +339,7 @@ nav {
       height: 1px; }
   nav li {
     float: left;
-    list-style: none;
-    margin: 0 10px 0 10px; }
-  nav a {
-    color: white;
-    text-decoration: none; }
-    nav a:link, nav a:visited {
-      color: white;
-      padding: 10px 10px 10px 40px;
-      text-transform: uppercase; }
-    nav a:hover, nav a:active {
-      color: #e44d26; }
-  nav #home a:hover {
-    background: url("../img/sprite.png") no-repeat -2px 0px; }
-  nav #super a:hover {
-    background: url("../img/sprite.png") no-repeat -3px -37px; }
-  nav #html5 a:hover {
-    background: url("../img/sprite.png") no-repeat -2px -74px; }
+    list-style: none; }
 
 article {
   width: 100%;
@@ -371,34 +354,14 @@ article {
     height: 1px; }
   article section {
     width: 25%;
-    float: left;
-    text-align: left; }
+    float: left; }
     article section img {
-      border: 0.625rem solid white; }
-    article section h3 {
-      font-family: 'Open Sans', sans-serif; }
-    article section a {
-      color: white;
-      text-decoration: none; }
-      article section a:hover, article section a:active {
-        color: #e44d26; }
-    article section img + p {
-      line-height: 1.5rem;
-      text-indent: 2rem; }
-    article section p {
       width: 80%; }
   article blockquote {
-    color: #e44d26;
-    font-size: 2em;
-    font-style: italic;
-    letter-spacing: .0625rem; }
+    width: 96%; }
 
 footer {
   width: 100%; }
   footer p {
-    width: 45%;
-    float: left;
-    font: .625rem 'arial', sans-serif;
-    text-align: left; }
-  footer p:first-of-type {
-    margin-right: 5%; }
+    width: 50%;
+    float: left; }
