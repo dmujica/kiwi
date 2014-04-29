@@ -1,10 +1,9 @@
 /*variables*/
 $section: 25%;
-$footer: 50%;
+$footer: 45%;
 $container: 100%;
 $orange: #e44d26;
-$white: #fff;
-
+$white: #fff; 
 /*mixins*/
 @mixin margin-reset {
 	margin: 0 auto;
@@ -21,4 +20,18 @@ $white: #fff;
     visibility: hidden;
   }
   * html & { height: 1px }
+}
+
+@mixin anchorlinks {
+  color: $white;
+  text-decoration: none;
+}
+
+@mixin sprite {
+  height: 28px;
+  width: 28px;
+}
+
+@mixin fonts {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
