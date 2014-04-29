@@ -5,7 +5,10 @@ body {
 	background: url(../img/bg.jpg);
 	width: 90%;
 	@include margin-reset;
+	color: $white;
+	@include fonts; 
 }
+
 .container {
 	width: $container;
 }
@@ -16,14 +19,45 @@ nav {
 	
 
 	ul {
-		@include clearfix;
+  		@include clearfix;
 		padding: 0;
-	}
-
-	li {
-		float: left;
-		list-style: none;
-	}
+  	}
+  
+  	li {
+  		float: left;
+  		list-style: none;
+		margin: 0 10px 0 10px;
+  	}
+ 
+	a {
+ 		@include anchorlinks;
+		&:link,
+		&:visited { 
+			color: $white;
+			padding: 10px 10px 10px 40px;
+			text-transform: uppercase;
+ 		}
+ 
+ 		&:hover,
+ 		&:active {
+			color: #e44d26;
+		}
+ 
+ 	}
+ 
+ 	#home a:hover {
+ 		background: url('../img/sprite.png') no-repeat -2px 0px;
+ 	    }
+ 
+ 	#super a:hover {
+ 		background: url('../img/sprite.png') no-repeat -3px -37px;
+ 	    }
+ 
+ 	#html5 a:hover {
+ 		background: url('../img/sprite.png') no-repeat -2px -74px;
+ 	    }
+ 	
+ 
 }
 
 article {
