@@ -372,14 +372,35 @@ article {
     height: 1px; }
   article section {
     width: 25%;
-    float: left; }
+    float: left;
+    text-align: left; }
     article section img {
+      border: 0.625rem solid white; }
+    article section h3 {
+      font-family: 'Open Sans', sans-serif; }
+    article section a {
+      color: white;
+      text-decoration: none; }
+      article section a:hover, article section a:active {
+        color: #e44d26; }
+    article section img + p {
+      line-height: 1.5rem;
+      text-indent: 2rem; }
+    article section p {
       width: 80%; }
   article blockquote {
+    color: #e44d26;
+    font-size: 2em;
+    font-style: italic;
+    letter-spacing: .0625rem;
     width: 96%; }
 
 footer {
   width: 100%; }
   footer p {
     width: 45%;
-    float: left; }
+    float: left;
+    font: .625rem 'arial', sans-serif;
+    text-align: left; }
+  footer p:first-of-type {
+    margin-right: 5%; }

@@ -66,17 +66,48 @@ article {
 		section {
 		width: $section;
 		float: left;
+		text-align: left;
 
 			img {
+				border: .625rem solid $white;
+			}
+
+			h3 {
+			font-family: 'Open Sans', sans-serif;
+			}
+
+			a {
+			  @include anchorlinks;
+
+			  &:hover,
+			  &:active {
+				color: #e44d26;
+			  }
+			}
+
+			img + p {
+			line-height: 1.5rem;
+			text-indent: 2rem;
+			}
+
+			p {
 				width: $container - 20%;
 			}
+
 		}
 
 		blockquote {
+			color: #e44d26;
+			font-size: 2em;
+			font-style: italic;
+			letter-spacing: .0625rem;
 			width: $container - 4%;
 		}
+		
 
 }
+
+
 
 footer {
 	width: $container;
@@ -84,5 +115,14 @@ footer {
 	p {
 		width: $footer;
 		float: left;
+		font: .625rem 'arial', sans-serif;
+		text-align: left;
 	}
+
+	p:first-of-type {
+		margin-right: 5%;
+    }
 }
+
+
+
