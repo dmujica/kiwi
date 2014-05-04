@@ -387,7 +387,8 @@ article {
     float: left;
     text-align: left; }
     article section img {
-      border: 0.625rem solid white; }
+      border: 0.625rem solid white;
+      max-width: 100%; }
     article section h3 {
       font-family: 'Open Sans', sans-serif; }
     article section img + p {
