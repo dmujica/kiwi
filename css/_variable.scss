@@ -27,11 +27,11 @@ $white: #fff;
     color: $white;
     text-decoration: none;
  }
- 
- @mixin sprite {
-    height: 28px;
-    width: 28px;
+
+@mixin sprite {
+    height: 30px;
+    width: 30px;
  }
- @mixin fonts {
+@mixin fonts {
    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
    }

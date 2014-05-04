@@ -5,8 +5,8 @@ body {
 	background: url(../img/bg.jpg);
 	width: 90%;
 	@include margin-reset;
-	color: $white;
-	@include fonts; 
+	color: $white; 
+	@include fonts;
 }
 
 .container {
@@ -21,6 +21,7 @@ nav {
 	ul {
   		@include clearfix;
 		padding: 0;
+		width: $container;
   	}
   
   	li {
@@ -28,7 +29,14 @@ nav {
   		list-style: none;
 		margin: 0 10px 0 10px;
   	}
- 
+
+  	.logo {
+  		background: url(../img/logo.svg);
+  		width: 128px;
+  		height: 128px;
+  		margin-left: 10%;
+  	}
+
 	a {
  		@include anchorlinks;
 		&:link,
@@ -46,15 +54,18 @@ nav {
  	}
  
  	#home a:hover {
- 		background: url('../img/sprite.png') no-repeat -2px 0px;
+ 		@include sprite;
+ 		background: url('../img/sprite.png') no-repeat -2px 2px;
  	    }
  
  	#super a:hover {
- 		background: url('../img/sprite.png') no-repeat -3px -37px;
+ 		@include sprite;
+ 		background: url('../img/sprite.png') no-repeat -2px -29px;
  	    }
  
  	#html5 a:hover {
- 		background: url('../img/sprite.png') no-repeat -2px -74px;
+ 		@include sprite;
+ 		background: url('../img/sprite.png') no-repeat -1px -65px;
  	    }
  	
  
@@ -74,15 +85,6 @@ article {
 
 			h3 {
 			font-family: 'Open Sans', sans-serif;
-			}
-
-			a {
-			  @include anchorlinks;
-
-			  &:hover,
-			  &:active {
-				color: #e44d26;
-			  }
 			}
 
 			img + p {
@@ -117,6 +119,8 @@ footer {
 		float: left;
 		font: .625rem 'arial', sans-serif;
 		text-align: left;
+		line-height: 1.5em;
+
 	}
 
 	p:first-of-type {

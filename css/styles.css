@@ -330,7 +330,8 @@ nav {
   text-align: left; }
   nav ul {
     display: inline-block;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
     nav ul:after {
       content: ".";
       display: block;
@@ -343,6 +344,11 @@ nav {
     float: left;
     list-style: none;
     margin: 0 10px 0 10px; }
+  nav .logo {
+    background: url(../img/logo.svg);
+    width: 128px;
+    height: 128px;
+    margin-left: 10%; }
   nav a {
     color: white;
     text-decoration: none; }
@@ -353,11 +359,17 @@ nav {
     nav a:hover, nav a:active {
       color: #e44d26; }
   nav #home a:hover {
-    background: url("../img/sprite.png") no-repeat -2px 0px; }
+    height: 30px;
+    width: 30px;
+    background: url("../img/sprite.png") no-repeat -2px 2px; }
   nav #super a:hover {
-    background: url("../img/sprite.png") no-repeat -3px -37px; }
+    height: 30px;
+    width: 30px;
+    background: url("../img/sprite.png") no-repeat -2px -29px; }
   nav #html5 a:hover {
-    background: url("../img/sprite.png") no-repeat -2px -74px; }
+    height: 30px;
+    width: 30px;
+    background: url("../img/sprite.png") no-repeat -1px -65px; }
 
 article {
   width: 100%;
@@ -378,11 +390,6 @@ article {
       border: 0.625rem solid white; }
     article section h3 {
       font-family: 'Open Sans', sans-serif; }
-    article section a {
-      color: white;
-      text-decoration: none; }
-      article section a:hover, article section a:active {
-        color: #e44d26; }
     article section img + p {
       line-height: 1.5rem;
       text-indent: 2rem; }
@@ -401,6 +408,7 @@ footer {
     width: 45%;
     float: left;
     font: .625rem 'arial', sans-serif;
-    text-align: left; }
+    text-align: left;
+    line-height: 1.5em; }
   footer p:first-of-type {
     margin-right: 5%; }
