@@ -2,8 +2,8 @@
 @import "_variable.scss";
 
 body {
-	background: url(../img/bg.jpg);
-	width: 90%;
+	background: url(../img/bg.png);
+	width: 960px;
 	@include margin-reset;
 	color: $white; 
 	@include fonts;
@@ -16,12 +16,18 @@ body {
 nav {
 	width: $container;
 	text-align: left;
+	margin-left: 60px;
+
+	svg {
+		width:128px;
+		height: 128px;
+		float: left;
+	}
 	
 
 	ul {
   		@include clearfix;
 		padding: 0;
-		width: $container;
   	}
   
   	li {
@@ -74,6 +80,7 @@ nav {
 article {
 	width: $container;
 	@include clearfix;
+
 		section {
 		width: $section;
 		float: left;
@@ -113,10 +120,8 @@ article {
 
 
 footer {
-	width: $container;
-
 	p {
-		width: $footer;
+		width: 45%;
 		float: left;
 		font: .625rem 'arial', sans-serif;
 		text-align: left;
